@@ -208,6 +208,49 @@ ol.entries li:last-child {
   font: 12px/1.6 var(--mono);
 }
 
+/* featured races */
+
+ol.races {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol.races li {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 0 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+ol.races li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.race-name {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.race-meta,
+.race-splits {
+  margin: 0.3em 0 0;
+  color: var(--muted);
+  font: 12px/1.7 var(--mono);
+}
+
+.race-splits {
+  letter-spacing: 0.01em;
+}
+
+.race-time {
+  color: var(--fg);
+  font: 1.25rem/1.4 var(--mono);
+  white-space: nowrap;
+}
+
 /* key/value lines */
 
 ul.facts {
@@ -314,9 +357,16 @@ td .small {
     font-size: 1.25rem;
   }
 
-  ol.entries li {
+  ol.entries li,
+  ol.races li {
     grid-template-columns: 1.6rem 1fr;
     gap: 0 8px;
+  }
+
+  .race-time {
+    grid-column: 2;
+    margin-top: 0.35em;
+    font-size: 1.1rem;
   }
 
   .site-nav {

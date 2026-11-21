@@ -8,7 +8,7 @@ Personal home page. Plain HTML, one stylesheet, no build step, no JavaScript, no
 - `/about/`
 - `/projects/`
 - `/triathlon/`
-- `/colophon/`
+- `/404.html` — custom not-found page
 - `/astro-photos/` — separate repository and GitHub Pages site
 
 ## Local preview
