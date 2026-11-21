@@ -109,6 +109,19 @@ a:focus-visible {
   opacity: 0.45;
 }
 
+/* language switch, pushed to the right end of the nav */
+
+.site-nav .lang {
+  display: inline-flex;
+  gap: 0.55em;
+  margin-left: auto;
+  padding-left: 0.9em;
+}
+
+.lang .current {
+  color: var(--fg);
+}
+
 /* text */
 
 main {
